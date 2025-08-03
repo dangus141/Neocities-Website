@@ -336,7 +336,6 @@ main > #main_content-1 {
 }
 
 #wobbuffet {
-    
 }
 
 #wobbuffet > img {
@@ -352,9 +351,18 @@ main > #main_content-1 {
 
 #main_content-2_buttons {
     display: flex;
-    object-fit: contain;
     flex-direction: row;
     justify-content: center;
+}
+
+#buttons1 > div > img {
+    width: 7vw;
+    object-fit: contain;
+}
+
+#buttons2 > div > img {
+    width: 7vw;
+    object-fit: contain;
 }
 
 #status_box {
