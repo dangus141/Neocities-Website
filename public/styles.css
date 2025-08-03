@@ -117,7 +117,7 @@
 
 #arizonastamp {
     position: absolute;
-    left: 120px;
+    left: 0px;
     top: -10px;
     z-index: -2;
 }
@@ -125,7 +125,7 @@
 #arizonastamp > img {
     width: 8vw;
     object-fit: contain;
-    transform: rotate(-20deg);
+    transform: rotate(20deg);
 }
 
 #money {
