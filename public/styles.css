@@ -183,7 +183,8 @@ body {
 
 /* nav bar */
 nav {
-    display: inline;
+    display: inline-flex;
+    justify-content: space-between;
     grid-area: nav;
     padding: 1em;
     position: relative;
@@ -196,10 +197,6 @@ nav {
 
 ul {
     justify-content: center;
-    display: inline-flex;
-}
-
-nav > ul {
     display: inline;
     list-style: none;
 }
