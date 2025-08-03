@@ -328,7 +328,7 @@ main > #main_content-1 {
 }
 
 #main_content-2 {
-    padding: 0.25em;
+    padding: 0.75em;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -352,7 +352,6 @@ main > #main_content-1 {
 
 #main_content-2_buttons {
     display: flex;
-    width: 20vw;
     object-fit: contain;
     flex-direction: row;
     justify-content: center;
