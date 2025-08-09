@@ -150,7 +150,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background-image: url("images/bgs/boat.jpg");
 }
 
@@ -578,10 +577,24 @@ input[type="range"]::-moz-range-thumb {
     .content {
         grid-template: "nav" auto "main" auto "asideLeft" auto "asideRight" auto;
         row-gap: 0.25em;
+        margin: auto;
+    }
+
+    .content > * {
+        display: block;
     }
 
     main {
         width: auto;
+        font-size: 1.5em;
+    }
+
+    #status_box > p {
+        font-size: 0.6em;
+    }
+
+    #status_box_header {
+        font-size: 0.75em;
     }
 
     #pompompurin > img {
@@ -597,7 +610,7 @@ input[type="range"]::-moz-range-thumb {
     }
 
     #main_content-1 > div > img {
-        width: 15em;
+        width: 9em;
         margin-bottom: 1em;
     }
 
@@ -621,12 +634,6 @@ input[type="range"]::-moz-range-thumb {
         position: relative;
         right: auto;
         border-left-style: outset;
-    }
-
-    nav > ul {
-        display: grid;
-        grid-template: "home aboutme" auto "media blog" auto;
-        font-size: 15px;
     }
 
     li > img {
@@ -663,6 +670,12 @@ input[type="range"]::-moz-range-thumb {
         align-content: center;
     }
 
+    ul {
+        display: grid;
+        grid-template: "home aboutme" auto "media blog" auto;
+        font-size: 0.75em;
+    }
+
     ul > li {
         padding: 0.15em;
         text-align: center;
@@ -684,5 +697,20 @@ input[type="range"]::-moz-range-thumb {
 
     #status_box {
         width: 100%;
+    }
+
+    #buttons1 > div > img {
+        width: 25vw;
+        object-fit: contain;
+    }
+
+    #buttons2 > div > img {
+        width: 25vw;
+        object-fit: contain;
+    }
+
+    #wobbuffet > img {
+        width: 35vw;
+        object-fit: contain;
     }
 }
