@@ -285,13 +285,13 @@ main {
     border-width: 6px;
 }
 
-#button_divider {
+.button_divider {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#waves_divider {
+.waves_divider {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -423,9 +423,8 @@ aside {
     overflow: auto;
 }
 
-aside > #aside_content-1,
-#aside_content-2,
-#aside_content-3 {
+aside > #aside_content-1l,
+#aside_content-3l {
     display: flex;
     flex-direction: column;
     border: double;
@@ -445,11 +444,11 @@ aside > #aside_content-3r {
     margin: 0.25em;
 }
 
-#aside_content-1 > img {
+#aside_content-1l > img {
     animation: tilt 1s infinite alternate;
 }
 
-#aside_content-1 > img:hover {
+#aside_content-1l > img:hover {
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -457,7 +456,7 @@ aside > #aside_content-3r {
     animation-fill-mode: none;
 }
 
-#aside_content-3 {
+#aside_content-3l {
     height: 30vh;
     max-height: 100%;
     overflow: auto;
@@ -473,11 +472,12 @@ aside > #aside_content-3r {
     border-radius: 0.5em;
 }
 
-#currently > h4 {
+#currently > h2 {
     background-image: linear-gradient(#da8e8e, #7b3232);
     color: #ededed;
     border-bottom: solid 0.025em black;
     margin: 0em;
+    font-size: 1em;
 }
 
 #currently_links > p > a:hover {
@@ -638,10 +638,6 @@ input[type="range"]::-moz-range-thumb {
 
     #main_content-1 {
         font-size: 0.75em;
-    }
-
-    section {
-        font-size: 14px;
     }
 
     #main_content-1 > div > img {
