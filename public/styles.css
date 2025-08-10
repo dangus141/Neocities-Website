@@ -349,9 +349,6 @@ main > #main_content-1 {
     align-items: center;
 }
 
-#wobbuffet {
-}
-
 #wobbuffet > img {
     width: 10vw;
     object-fit: contain;
@@ -516,6 +513,8 @@ aside > #aside_content-3r {
     width: 10em;
     object-fit: contain;
 }
+
+/*footer*/
 
 /* music player */
 #musicplayer {

@@ -5,6 +5,7 @@
         <title>dangus</title>
         <link rel="stylesheet" href="styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://iframe.chat/scripts/main.min.js"></script>
     </head>
 
     <!--body-->
@@ -133,7 +134,32 @@
                         <img src="images/dividers/buttons.gif" /><img src="images/dividers/buttons.gif" /><img
                             src="images/dividers/buttons.gif" />
                     </div>
-                    <section id="main_content-3"></section>
+                    <section id="main_content-3">
+                        <div id="crossword">
+                            <script type="text/javascript">
+                                boatload_puzzles_format = "CompactLandscape";
+                            </script>
+                        </div>
+                        <p>
+                            Loading <a href="https://www.boatloadpuzzles.com/playcrossword"> crossword puzzle</a>. One
+                            moment please.
+                        </p>
+                        <script type="text/javascript" src="//www.boatloadpuzzles.com/Crossword.js"></script>
+                        <iframe
+                            src="https://iframe.chat/embed?chat=19019043"
+                            id="chattable"
+                            frameborder="none"></iframe>
+                        <script>
+                            chattable.initialize({
+                                theme: "Tendo""
+                            });
+                        </script>
+                        <script>
+                            chattable.initialize({
+                                stylesheet: "chattable.css"
+                            });
+                        </script>
+                    </section>
                     <div class="waves_divider">
                         <img src="images/dividers/waves.gif" />
                         <img src="images/dividers/waves.gif" />
@@ -527,7 +553,15 @@
                     </section>
                 </aside>
             </div>
-            <footer style="justify-self: center; margin: 0.5em"></footer>
+            <footer style="justify-self: center; margin: 0.5em">
+                <!-- FC2 Counter  Starts here -->
+                <script
+                    language="javascript"
+                    type="text/javascript"
+                    src="//counter1.fc2.com/counter.php?id=40502904&main=1"></script>
+                <noscript><img src="//counter1.fc2.com/counter_img.php?id=40502904&main=1" /></noscript>
+                <!-- FC2 Counter  Ends here -->
+            </footer>
         </div>
     </body>
 </html>
