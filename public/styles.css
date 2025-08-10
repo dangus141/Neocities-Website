@@ -42,6 +42,7 @@
     z-index: -1;
     left: 50px;
     bottom: 0px;
+    filter: sepia(25%);
 }
 
 #scrapbook1 > img {
@@ -55,6 +56,7 @@
     z-index: -1;
     right: 0px;
     top: 0px;
+    filter: sepia(25%);
 }
 
 #scrapbook3 {
@@ -62,12 +64,14 @@
     z-index: -2;
     left: 0px;
     bottom: -200px;
+    filter: sepia(25%);
 }
 
 #scrapbook3 > img {
     width: 20vw;
     object-fit: contain;
     transform: rotate(-50deg);
+    filter: sepia(25%);
 }
 
 #tickets1 {
@@ -75,18 +79,21 @@
     z-index: -2;
     left: 600px;
     top: -240px;
+    filter: sepia(25%);
 }
 
 #tickets1 > img {
     width: 20vw;
     object-fit: contain;
     transform: rotate(-80deg);
+    filter: sepia(25%);
 }
 
 #scrapbook4 > img {
     width: 10vw;
     object-fit: contain;
     transform: rotate();
+    filter: sepia(25%);
 }
 
 #scrapbook5 {
@@ -94,12 +101,14 @@
     z-index: -2;
     right: 0px;
     top: 0px;
+    filter: sepia(25%);
 }
 
 #scrapbook5 > img {
     width: 30vw;
     object-fit: contain;
     transform: rotate(30deg);
+    filter: sepia(25%);
 }
 
 #philippines_stamp {
@@ -107,12 +116,14 @@
     left: 5px;
     top: 80px;
     z-index: -1;
+    filter: sepia(25%);
 }
 
 #philippines_stamp > img {
     width: 10vw;
     object-fit: contain;
     transform: rotate(10deg);
+    filter: sepia(25%);
 }
 
 #arizonastamp {
@@ -120,12 +131,14 @@
     left: 0px;
     top: -10px;
     z-index: -2;
+    filter: sepia(25%);
 }
 
 #arizonastamp > img {
     width: 8vw;
     object-fit: contain;
     transform: rotate(20deg);
+    filter: sepia(25%);
 }
 
 #money {
@@ -133,12 +146,14 @@
     z-index: -3;
     right: 250px;
     top: -100px;
+    filter: sepia(25%);
 }
 
 #money > img {
     width: 20vw;
     object-fit: contain;
     transform: rotate(50deg);
+    filter: sepia(25%);
 }
 
 /* main body */
@@ -157,9 +172,8 @@ body {
     scale: 0.925;
     width: 90vw;
     max-width: 100%;
-    /*background: rgba(255, 255, 255, 0.4);*/
-
     padding: 1em;
+    filter: sepia(25%);
 }
 
 .content {
@@ -283,6 +297,10 @@ main {
     border: outset;
     border-color: #5d6b71;
     border-width: 6px;
+}
+
+#so_long {
+    filter: grayscale(50%);
 }
 
 .button_divider {
