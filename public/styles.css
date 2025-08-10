@@ -74,7 +74,7 @@
     position: absolute;
     z-index: -2;
     left: 600px;
-    top: -170px;
+    top: -240px;
 }
 
 #tickets1 > img {
@@ -269,7 +269,7 @@ main {
     overflow-y: auto;
     width: 55vw;
     max-width: 100%;
-    height: 112vh;
+    height: fit-content;
 
     /* grid stuff */
     grid-area: main;
@@ -435,9 +435,7 @@ aside > #aside_content-1,
     margin: 0.5em;
 }
 
-aside > #aside_content-1r,
-#aside_content-2r,
-#aside_content-3r {
+aside > #aside_content-3r {
     display: flex;
     flex-direction: column;
     border: double;
@@ -463,6 +461,43 @@ aside > #aside_content-1r,
     height: 30vh;
     max-height: 100%;
     overflow: auto;
+}
+
+#aside_content-1r {
+    margin-bottom: 1.5em;
+}
+
+#currently {
+    width: 100%;
+    background-image: url(images/bgs/lightbluebg.jpeg);
+    border: double 0.25em;
+    border-radius: 0.5em;
+}
+
+#currently > h4 {
+    background-image: linear-gradient(#da8e8e, #7b3232);
+    color: #ededed;
+    border-bottom: solid 0.025em black;
+    margin: 0em;
+}
+
+#currently_links > p > a:hover {
+    color: #a74658;
+}
+
+#aside_content-2r {
+    border-image-slice: 70 70 70 80;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-image-repeat: stretch stretch;
+    border-image-source: url(images/borders/buttonborder.png);
+}
+
+#mii {
+    padding: 1em;
+    width: 10em;
+    object-fit: contain;
 }
 
 /* music player */
