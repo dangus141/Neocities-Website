@@ -135,30 +135,18 @@
                             src="images/dividers/buttons.gif" />
                     </div>
                     <section id="main_content-3">
-                        <div id="crossword">
-                            <script type="text/javascript">
-                                boatload_puzzles_format = "CompactLandscape";
+                        <div id="chatbox">
+                            <iframe
+                                src="https://iframe.chat/embed?chat=19019043"
+                                id="chattable"
+                                frameborder="none"></iframe>
+                            <script src="https://iframe.chat/scripts/main.min.js"></script>
+                            <script>
+                                chattable.initialize({
+                                    theme: "Tendo" // use the name of your preferred demo
+                                });
                             </script>
                         </div>
-                        <p>
-                            Loading <a href="https://www.boatloadpuzzles.com/playcrossword"> crossword puzzle</a>. One
-                            moment please.
-                        </p>
-                        <script type="text/javascript" src="//www.boatloadpuzzles.com/Crossword.js"></script>
-                        <iframe
-                            src="https://iframe.chat/embed?chat=19019043"
-                            id="chattable"
-                            frameborder="none"></iframe>
-                        <script>
-                            chattable.initialize({
-                                theme: "Tendo""
-                            });
-                        </script>
-                        <script>
-                            chattable.initialize({
-                                stylesheet: "chattable.css"
-                            });
-                        </script>
                     </section>
                     <div class="waves_divider">
                         <img src="images/dividers/waves.gif" />
