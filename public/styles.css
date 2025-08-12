@@ -293,10 +293,16 @@ main {
     display: flex;
     flex-direction: column;
     padding: 1em;
-
     border: outset;
     border-color: #5d6b71;
     border-width: 6px;
+}
+
+/* NPR */
+#npr > p > a:hover {
+    color: white;
+    text-decoration: underline;
+
 }
 
 #so_long {
