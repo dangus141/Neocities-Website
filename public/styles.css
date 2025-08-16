@@ -312,6 +312,12 @@ main {
     filter: grayscale(50%);
 }
 
+#main_content-1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .button_divider {
     display: flex;
     flex-direction: row;
