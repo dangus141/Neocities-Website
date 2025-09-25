@@ -184,7 +184,7 @@ body {
     display: grid;
     row-gap: 0.5em;
     column-gap: 0.75em;
-    grid-template: "asideLeft nav nav" auto "asideLeft main asideRight" auto "asideLeft main ." auto;
+    grid-template: "nav main" auto "nav main" auto "nav main" "footer footer" auto;
     margin: 0.5em;
 }
 
@@ -200,21 +200,14 @@ body {
 
 /* nav bar */
 nav {
-    display: inline-flex;
-    justify-content: space-between;
     grid-area: nav;
     padding: 1em;
-    position: relative;
-    right: 1.04em;
     border: outset;
     border-color: #5d6b71;
     border-width: 6px;
-    border-left-style: none;
 }
 
 ul {
-    justify-content: center;
-    display: inline;
     list-style: none;
 }
 
@@ -222,14 +215,12 @@ ul > li {
     text-align: center;
     padding: 0.25em;
     margin: 0.15em;
-    float: left;
     font-size: 1.25em;
     background-color: rgba(20, 20, 20, 0.15);
     border: hidden;
     border-radius: 0.2em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 li > img {
@@ -240,7 +231,7 @@ li > img {
 }
 
 #nav_flags {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-content: center;
 }
@@ -302,37 +293,10 @@ main {
     border-width: 6px;
 }
 
-/* NPR */
-#npr > p > a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-#so_long {
-    filter: grayscale(50%);
-}
-
 #main_content-1 {
     display: flex;
     align-items: center;
     text-align: center;
-}
-
-.button_divider {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.waves_divider {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#website_warning {
-    font-size: 1.2em;
-    padding: 0.5em;
 }
 
 main > p {
@@ -345,323 +309,9 @@ main > #main_content-1,
     margin: 0.5em;
 }
 
-main > #main_content-1 {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-#main_content-1 > p {
-    float: right;
-    margin: 1.5em;
-}
-
-#main_content-2 {
-    padding: 0.75em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#wobbuffet > img {
-    width: 10vw;
-    object-fit: contain;
-}
-
-#main_content-2_buttons,
-#status_box {
-    margin: 0.5em;
-    width: 14vw;
-}
-
-#main_content-2_buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#buttons1 > div > img {
-    width: 7vw;
-    object-fit: contain;
-}
-
-#buttons2 > div > img {
-    width: 7vw;
-    object-fit: contain;
-}
-
-#status_box {
-    background-color: rgba(255, 255, 255);
-    border: solid 0.025em #656565;
-    height: 18vh;
-    max-height: 100%;
-}
-
-#status_box_header {
-    background-image: linear-gradient(#65c3e2, #325ca8);
-    border-bottom: double 0.25px black;
-    color: #ededed;
-    display: inline-flex;
-    width: 100%;
-    height: 5vh;
-    justify-content: space-between;
-}
-
-#status_box_header > img {
-    width: 1em;
-    object-fit: contain;
-    margin-right: 0.5em;
-}
-
-#status_box > h4 > img {
-    display: inline;
-}
-
-#main_content-2_buttons > img {
-    width: 5em;
-    object-fit: contain;
-    padding-bottom: 0.25em;
-}
-
-#main_content-3 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-marquee {
-    width: 14em;
-    object-fit: contain;
-  
-}
-
-marquee > img {
-    margin: 0.2em;
-}
-
-/* aside content */
-
-aside {
-    border: outset;
-    border-color: #5d6b71;
-    border-width: 6px;
-    padding: 1em;
-}
-
-#aside_left {
-    grid-area: asideLeft;
-    width: 15vw;
-    max-width: 100%;
-    justify-self: start;
-    overflow: auto;
-    min-width: fit-content;
-    font-size: 12px;
-}
-#aside_right {
-    grid-area: asideRight;
-    width: 15vw;
-    max-width: 100%;
-    justify-self: start;
-    min-width: fit-content;
-    overflow: auto;
-}
-
-aside > #aside_content-1l,
-#aside_content-3l {
-    display: flex;
-    flex-direction: column;
-
-    padding: 0.2em;
-    background-color: rgba(183, 183, 183, 0.16);
-    margin: 0.5em;
-}
-
-aside > #aside_content-3r {
-    display: flex;
-    flex-direction: column;
-
-    padding: 0.2em;
-    background-color: rgba(183, 183, 183, 0.16);
-    margin: 0.25em;
-}
-
-#aside_content-1l {
-    border: double 0.5em;
-    border-radius: 100em;
-}
-
-#aside_content-1l > img {
-    animation: tilt 1s infinite alternate;
-}
-
-#aside_content-1l > img:hover {
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: none;
-}
-
-.scene {
-        border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABIUlEQVRYR+1Z7RKDMAib7//Qm+5O13YggUI/vO6XZ8uIgYa4ba/f551cp5cbc7+8HRqfgghNBDzsbf4D6LmBY26I9UcBPavWqzW+eRFGpwMKnIeQLWpGQ1AAX3oBLUuL6iaQo2pLpjaUjg4PdBRmSd2m2JMEvqqeQLAbUE5PAQzZFtUktDA6HVDroZNay7303YBKT+qlCqY8Fh1FE3GHC43/E3w0sDWjWT6Ne1pABQE2uydtq3AvgahqLKDSKNVWxOxHtYmspa/2o92BovITDfQ5s17LqHRopPXlRyWGvNbdetQLkMpdWWxeNFDyrEwFtFYXoxk2m5JoYOTI1Rjn9fuol3GWerjJOlL6JkB2Vm9H6lR/35QCW7aM6t2G6DeX+A+i15AZncAfXQAAAABJRU5ErkJggg==")
-        14 / 14px / 0 round;
-    border-width: 14px;
-    border-style: solid;
-}
-
-.update_date {
-    background-color: rgba(167, 222, 226, 0.61);
-    border: dotted 1.5px;
-    border-radius: 0.25em;
-    padding: 0.25em;
-}
-
-#aside_content-3l {
-    height: 30vh;
-    max-height: 100%;
-    overflow: auto;
-}
-
-#aside_content-1r {
-    margin-bottom: 1.5em;
-}
-
-#currently {
-    width: 100%;
-}
-
-#currently > h2 {
-    background-image: linear-gradient(#da8e8e, #7b3232);
-    color: #ededed;
-    border-bottom: solid 0.025em black;
-    margin: 0em;
-    font-size: 1em;
-}
-
-#currently_links > p > a:hover {
-    color: #a74658;
-}
-
-#aside_content-2r {
-    border-image-slice: 70 70 70 80;
-    border-image-width: 20px 20px 20px 20px;
-    border-image-outset: 0px 0px 0px 0px;
-    border-image-repeat: round round;
-    border-image-repeat: stretch stretch;
-    border-image-source: url(images/borders/buttonborder.png);
-}
-
-#mii {
-    padding: 1em;
-    width: 10em;
-    object-fit: contain;
-}
+/*aside*/
 
 /*footer*/
-
-/* music player */
-#musicplayer {
-    font-size: 1.5em;
-    width: 100%; /* width of the player - make it 100% if you want it to fill your container */
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.songtitle,
-.track-info,
-.now-playing {
-    padding: 5px;
-}
-
-.controls {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    font-size: 17px !important; /* size of controls */
-    width: 100%;
-}
-
-.buttons div {
-    width: 33.3%;
-}
-
-.playpause-track,
-.prev-track,
-.next-track {
-    color: #b2a158; /* color of buttons */
-    font-size: 35px !important; /* size of buttons */
-}
-
-.volume-icon {
-    font-size: 22px !important; /* size of volume icon */
-}
-
-.seeking,
-.volume {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-
-.now-playing,
-.track-info {
-    background-color: rgba(167, 222, 226, 0.61); /* background color of top two boxes */
-    border: dotted 1.5px;
-    border-radius: 0.25em;
-}
-
-.now-playing {
-    font-weight: bold;
-}
-
-input[type="range"] {
-    -webkit-appearance: none; /* removes default appearance of the tracks */
-    width: 100%;
-}
-
-input[type="range"]:focus {
-    outline: none; /* removes outline around tracks when focusing */
-}
-
-input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 4px; /* thickness of seeking track */
-    background: #45b7ff; /* color of seeking track */
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    height: 10px; /* height of seeking square */
-    width: 10px; /* width of seeking square */
-    border-radius: 0px; /* change to 5px if you want a circle seeker */
-    background: #dbc256; /* color of seeker square */
-    -webkit-appearance: none;
-    margin-top: -3px; /* fixes the weird margin around the seeker square in chrome */
-}
-
-input[type="range"]::-moz-range-track {
-    width: 100%;
-    height: 4px; /* thickness of seeking track */
-    background: #dbc256; /* color of seeking track */
-}
-
-input[type="range"]::-moz-range-thumb {
-    height: 10px; /* height of seeking square */
-    width: 10px; /* width of seeking square */
-    border-radius: 0px; /* change to 5px if you want a circle seeker */
-    background: #dbc256; /* color of seeker square */
-    border: none; /* removes weird border around seeker square in firefox */
-}
 
 @media only screen and (max-width: 601px) {
     #background_images {
@@ -750,7 +400,7 @@ input[type="range"]::-moz-range-thumb {
     #blog {
         grid-area: blog;
     }
-    
+
     #exlinks {
         grid-area: exlinks;
     }
@@ -819,5 +469,4 @@ input[type="range"]::-moz-range-thumb {
     #chatbox > iframe {
         width: 100%;
     }
-    
 }
