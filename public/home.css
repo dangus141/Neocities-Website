@@ -720,10 +720,27 @@ input[type="range"]::-moz-range-thumb {
     border: none; /* removes weird border around seeker square in firefox */
 }
 
-@media (min-width: 601px) and (max-width: 1255px) {
+@media (min-width: 601px) and (max-width: 1340px) {
     body {
         overflow: scroll;
         min-width: 1280px;
+    }
+
+    main {
+        width: 630px;
+    }
+
+    #main_content-2 > * {
+        min-width: 160px;
+        height: auto;
+    }
+    
+    #aside_right {
+        width: 200px;
+    }
+    
+    #aside_right > * {
+        width: 187px;
     }
 }
 
@@ -897,5 +914,3 @@ input[type="range"]::-moz-range-thumb {
         column-gap: 0.75em;
     }
 }
-
-
