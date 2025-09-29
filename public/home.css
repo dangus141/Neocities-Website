@@ -35,194 +35,6 @@
     }
 }
 
-/* bg images */
-#scrapbook1 {
-    position: absolute;
-    z-index: -1;
-    left: 50px;
-    bottom: 0px;
-    filter: sepia(25%);
-}
-
-#scrapbook1 > img {
-    object-fit: contain;
-    transform: rotate(45deg);
-    width: 400px;
-    min-width: 400px;
-}
-
-#scrapbook2 {
-    position: absolute;
-    z-index: -1;
-    right: 0px;
-    top: 0px;
-    filter: sepia(25%);
-}
-
-#scrapbook2 > img {
-    width: 300px;
-    min-width: 300px;
-}
-
-#scrapbook3 {
-    position: absolute;
-    z-index: -2;
-    left: 0px;
-    bottom: -300px;
-    filter: sepia(25%);
-}
-
-#scrapbook3 > img {
-    width: 400px;
-    object-fit: contain;
-    transform: rotate(-50deg);
-    filter: sepia(25%);
-}
-
-#tickets1 {
-    position: absolute;
-    z-index: 0;
-    left: 40vw;
-    top: -240px;
-    filter: sepia(25%);
-}
-
-#tickets1 > img {
-    width: 300px;
-    object-fit: contain;
-    transform: rotate(-80deg);
-    filter: sepia(25%);
-}
-
-#scrapbook4 > img {
-    width: 10vw;
-    object-fit: contain;
-    transform: rotate();
-    filter: sepia(25%);
-}
-
-#scrapbook5 {
-    position: absolute;
-    z-index: -2;
-    right: 0px;
-    top: 0px;
-    filter: sepia(25%);
-}
-
-#scrapbook5 > img {
-    width: 30vw;
-    object-fit: contain;
-    transform: rotate(30deg);
-    filter: sepia(25%);
-}
-
-#philippines_stamp {
-    position: absolute;
-    right: 17vw;
-    top: 20vh;
-    z-index: 2;
-    filter: sepia(25%);
-}
-
-#philippines_stamp > img {
-    width: 130px;
-    object-fit: contain;
-    transform: rotate(20deg);
-    filter: sepia(25%);
-}
-
-#arizonastamp {
-    position: absolute;
-    left: 25vw;
-    top: 20vh;
-    z-index: 2;
-    filter: sepia(25%);
-}
-
-#arizonastamp > img {
-    width: 100px;
-    object-fit: contain;
-    transform: rotate(-5deg);
-    filter: sepia(25%);
-}
-
-#money {
-    position: absolute;
-    z-index: -3;
-    right: 250px;
-    top: -100px;
-    filter: sepia(25%);
-}
-
-#money > img {
-    width: 20vw;
-    object-fit: contain;
-    transform: rotate(50deg);
-    filter: sepia(25%);
-}
-
-/* bg image resized screen */
-
-@media (min-width: 1920px) and (min-height: 1080px) {
-    #scrapbook1 {
-        position: absolute;
-        z-index: -1;
-        left: 50px;
-        bottom: 300px;
-        filter: sepia(25%);
-    }
-
-    #scrapbook1 > img {
-        object-fit: contain;
-        transform: rotate(45deg);
-        width: 400px;
-        min-width: 400px;
-    }
-
-    #philippines_stamp {
-        position: absolute;
-        right: 22vw;
-        top: 14vh;
-        z-index: 2;
-        filter: sepia(25%);
-    }
-
-    #philippines_stamp > img {
-        width: 150px;
-        object-fit: contain;
-        transform: rotate(20deg);
-        filter: sepia(25%);
-    }
-
-    #arizonastamp {
-        position: absolute;
-        left: 22vw;
-        top: 13vh;
-        z-index: 2;
-        filter: sepia(25%);
-    }
-
-    #arizonastamp > img {
-        width: 100px;
-        object-fit: contain;
-        transform: rotate(-5deg);
-        filter: sepia(25%);
-    }
-
-    #tickets1 {
-        position: absolute;
-        z-index: -1;
-        left: 40vw;
-        filter: sepia(25%);
-    }
-
-    #tickets1 > img {
-        width: 400px;
-        object-fit: contain;
-        transform: rotate(-80deg);
-        filter: sepia(25%);
-    }
-}
 /* main body */
 
 .border {
@@ -269,11 +81,12 @@ nav {
     display: inline-flex;
     justify-content: space-between;
     grid-area: nav;
-    padding: 1em;
+    padding: 0.25em;
     position: relative;
     border: outset;
     border-color: #5d6b71;
     border-width: 6px;
+    box-shadow: 5px 5px 10px 2px rgba(41, 41, 41, 0.5);
 }
 
 ul {
@@ -288,12 +101,15 @@ ul > li {
     margin: 0.15em;
     float: left;
     font-size: 1.25em;
-    background-color: rgba(20, 20, 20, 0.15);
     border: hidden;
     border-radius: 0.2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+li:hover {
+    background-color: rgba(20, 20, 20, 0.15);
 }
 
 li > img {
@@ -344,6 +160,10 @@ a:visited {
     padding: 0.25em;
 }
 
+#shrine-dropdown-content > a:hover {
+    background-color: rgba(30, 189, 219, 0.25);
+}
+
 /* main content */
 
 main {
@@ -365,6 +185,7 @@ main {
     border: outset;
     border-color: #5d6b71;
     border-width: 6px;
+    box-shadow: 5px 5px 10px 2px rgba(41, 41, 41, 0.5);
 }
 
 /* NPR */
@@ -513,6 +334,7 @@ aside {
     border-width: 6px;
     padding: 1em;
     min-width: 100%;
+    box-shadow: 5px 5px 10px 2px rgba(41, 41, 41, 0.5);
 }
 
 #aside_left {
@@ -536,7 +358,6 @@ aside > #aside_content-1l,
     flex-direction: column;
 
     padding: 0.2em;
-    background-color: rgba(183, 183, 183, 0.16);
     margin: 0.5em;
 }
 
@@ -568,17 +389,20 @@ aside > #aside_content-3r {
     border-style: solid;
 }
 
-.update_date {
-    background-color: rgba(167, 222, 226, 0.61);
-    border: dotted 1.5px;
-    border-radius: 0.25em;
-    padding: 0.25em;
-}
-
 #aside_content-3l {
     height: 30vh;
     max-height: 100%;
     overflow: auto;
+    background-image: url(images/bgs/bluetile1.jpg);
+    background-size: contain;
+}
+
+.update_date {
+    text-decoration: underline;
+}
+
+#update_text {
+    font-family: courier new;
 }
 
 #aside_content-1r {
@@ -734,11 +558,11 @@ input[type="range"]::-moz-range-thumb {
         min-width: 160px;
         height: auto;
     }
-    
+
     #aside_right {
         width: 200px;
     }
-    
+
     #aside_right > * {
         width: 187px;
     }
