@@ -411,4 +411,9 @@ input[type="range"]::-moz-range-thumb {
     border: none; /* removes weird border around seeker square in firefox */
 }
 
-/* small screens */
+/* different resolutions */
+
+@media (min-width: 1920px) and (max-width: 2560px) 
+ {
+     body {zoom: 135%;}
+}
