@@ -42,6 +42,68 @@
     border-radius: 0.5em;
 }
 
+@media (min-width: 1920px) and (min-height: 1080px) {
+    #corner_image {
+        scale: 1
+    }
+    
+    .stickers img {
+        scale: 1.3;
+    }
+    
+    .left {
+        bottom: -10%;
+    }
+}
+
+
+
+/* stickers */
+.stickers {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 25%;
+    height: 95%;
+    width: 25%;
+    max-height: 95%;
+}
+
+.stickers img {
+    object-fit: contain;
+    position: relative;
+}
+
+.stickers.left {
+    left: -5%;
+}
+
+.stickers.main {
+    position: static;
+    display: inline;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.left {
+    left: 25%;
+}
+
+.lefter {
+    left: 5%;
+}
+
+body {
+    font-size: 20px;
+    font-family: Reactor7;
+    background-image: url(public/images/bgs/boat.jpg);
+}
+
+/* body */
 body {
     font-size: 20px;
     font-family: Reactor7;
@@ -565,6 +627,22 @@ input[type="range"]::-moz-range-thumb {
 
     #aside_right > * {
         width: 187px;
+    }
+
+    #buttons1 > div > img {
+        width: fit-content;
+    }
+
+    #buttons2 > div > img {
+        width: fit-content;
+    }
+    
+    #wobbuffet > img {
+        width: 120px;
+    }
+    
+    #status_box {
+        width: 160px;
     }
 }
 
