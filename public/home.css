@@ -34,6 +34,10 @@ body::before {
     height: 100%;
     z-index: -1;
     background-image: url(images/bgs/boat.jpg);
+    /* fun idea here but need to fix some structural issues before i can implement
+    background-repeat: repeat-y;
+    background-position: right;
+    */
     filter: sepia(35%);
 }
 
@@ -94,15 +98,13 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 100vh;
     margin: 2em;
     filter: sepia(25%);
 }
 
 .content {
-    width: 70vw;
-    height: 100vh;
-    max-height: 100vh;
+    /* does not include right aside!!! */
+    width: 1100px;
     text-align: center;
 
     /* grid */
@@ -349,10 +351,6 @@ nav {
     padding: 0.25em;
     justify-content: space-between; /* adds space between the links and nav flags */
     flex-wrap: wrap;
-}
-
-aside {
-    width: 15vw;
 }
 
 #aside-left {
