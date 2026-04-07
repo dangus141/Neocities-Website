@@ -55,16 +55,15 @@ body {
 /* classes */
 
 /* bg stickers classes */
-.stickers {
+.bgstickers {
     position: absolute;
-    height: 95%;
-    width: 25%;
-    max-height: 95%;
 }
 
-.stickers img {
+.bgstickers img {
     position: absolute;
     object-fit: contain;
+    filter: drop-shadow(2px 2px 2px);
+    z-index: 10;
 }
 
 .center {
