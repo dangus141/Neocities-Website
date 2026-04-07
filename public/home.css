@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: courier;
+    font-family: "Courier", "Courier New", monospace;
 }
 
 @font-face {
@@ -20,7 +20,21 @@
 
 body {
     font-size: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body::before {
+    content: ""; /* this content property makes a "fake" pseudoelement; essentially a fake box that doesn't exist in the html */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url(images/bgs/boat.jpg);
+    filter: sepia(35%);
 }
 
 /* main content */
@@ -250,27 +264,10 @@ marquee {
 
 marquee > a > img {
     margin: 0.2em;
-    box-shadow: 2px 2px 2px
+    box-shadow: 2px 2px 2px;
 }
 
 /* backgrounds */
-.newspaper {
-    background: url(images/bgs/newspaperbg.jpg);
-}
-
-.globe {
-    background: url(images/bgs/globebg.jpg);
-    background-size: contain;
-}
-
-.squarepaper {
-    background: url(images/websites/squarepaper.jpg);
-}
-
-.linedpaper {
-    background-image: url(images/bgs/linedpaper.jpg);
-    background-size: cover;
-}
 
 .animwater {
     background-image: url(images/bgs/wavesbg-animated.gif);
@@ -278,8 +275,34 @@ marquee > a > img {
 }
 
 .bluewhitestripes {
-    background-image: url(images/bgs/bluewhitestrips.jpg); 
+    background-image: url(images/bgs/bluewhitestrips.jpg);
     background-size: contain;
+}
+
+.ginghamgold {
+    background: url(images/bgs/gingham-gold.jpg);
+}
+
+.ginghamsilver {
+    background: url(images/bgs/gingham-silver.jpg);
+}
+
+.globe {
+    background: url(images/bgs/globebg.jpg);
+    background-size: contain;
+}
+
+.linedpaper {
+    background-image: url(images/bgs/linedpaper.jpg);
+    background-size: cover;
+}
+
+.newspaper {
+    background: url(images/bgs/newspaperbg.jpg);
+}
+
+.squarepaper {
+    background: url(images/bgs/squarepaper.jpg);
 }
 
 /* semantic elements */
@@ -449,8 +472,9 @@ input[type="range"]::-moz-range-thumb {
 
 /* different resolutions */
 
-@media (min-width: 1920px) and (max-width: 2560px) 
- {
-     body {zoom: 135%;}
-     /* TEMPORARY FIX UNTIL I GET SOME MORE MEDIA QUERIES SETUP */
+@media (min-width: 1920px) and (max-width: 2560px) {
+    body {
+        zoom: 135%;
+    }
+    /* TEMPORARY FIX UNTIL I GET SOME MORE MEDIA QUERIES SETUP */
 }
