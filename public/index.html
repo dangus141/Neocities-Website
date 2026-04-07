@@ -27,8 +27,7 @@
                             <p>
                                 I'm Dan and this is my personal website! I have a lot of interests and hopefully I can
                                 share them with you on this site! Feel free to explore my pages and I will try to update
-                                the site when I get the chance. Have fun!!!
-                                <br />
+                                the site when I get the chance.&nbsp;<br />
                                 <br />
                                 This page is always a work-in-progress!
                             </p>
@@ -40,7 +39,16 @@
                             <div
                                 class="flex-row fitbox ginghamgold"
                                 style="margin-left: 0; margin-right: 0; margin-bottom: 1em">
-                                <div class="bgstickers"><img src="images/flavor/stars.png" style="width: 100px; top: -80px; left: -75px; filter: drop-shadow(1px 1px 1px)"></div>
+                                <div class="bgstickers">
+                                    <img
+                                        src="images/flavor/stars.png"
+                                        style="
+                                            width: 100px;
+                                            top: -80px;
+                                            left: -75px;
+                                            filter: drop-shadow(1px 1px 1px);
+                                        " />
+                                </div>
                                 <img class="button" src="images/buttons/oldmanyaoi.gif" /><img
                                     class="button"
                                     src="images/buttons/queercoded.jpg" />
@@ -172,24 +180,42 @@
                             <u style="font-size: 20px"><b>05-April-2026</b></u>
                             <p>
                                 I'm back :D...been a while but I want to keep working on this again! Cleaned up my
-                                flexboxes some more!
+                                flexboxes some more and some decorative stuff!
                             </p>
                             <u style="font-size: 20px"><b>24-October-2025</b></u>
-                            <p>Another website overhaul... lol, at least my code isn't nasty anymore</p>
+                            <p>
+                                Another website overhaul... lol, at least my code isn't nasty anymore (using classes
+                                more, etc.)
+                            </p>
                             <u style="font-size: 20px"><b>14-August-2025</b></u>
                             <p>It's my birthday! I'm 24!</p>
                             <u style="font-size: 20px"><b>10-August-2025</b></u>
                             <p>Added chatbox</p>
                             <u style="font-size: 20px"><b>09-August-2025</b></u>
-                            <p>Added Currently box and more flavor.</p>
-                            <u style="font-size: 20px"><b>31-July-2025</b></u>
-                            <p>Added a media query, hopefully that makes viewing the website on mobile easier!</p>
+                            <p>Added Currently box and more decorative stuff.</p>
+                            <u style="font-size: 20px"></u>
                             <u style="font-size: 20px"><b>27-July-2025</b></u>
                             <p>
                                 Relaunched my website today with an all-new look! Hope to get my About Me page up and
                                 running soon!
                             </p>
                         </article>
+                    </section>
+                    <div class="divider"></div>
+                    <section>
+                        <div class="asidediv">
+                            <iframe
+                                src="https://iframe.chat/embed?chat=19019043"
+                                id="chattable"
+                                frameborder="none"
+                                title="chatbox"></iframe>
+                            <script src="https://iframe.chat/scripts/main.min.js"></script>
+                            <script>
+                                chattable.initialize({
+                                    theme: "Comment Section" // use the name of your preferred demo
+                                });
+                            </script>
+                        </div>
                     </section>
                     <div class="divider"><img src="images/dividers/buttons.gif" /></div>
                 </main>
@@ -216,7 +242,7 @@
                     </div>
                 </nav>
                 <aside
-                    id="asideLeft"
+                    id="aside-left"
                     class="fullbox thinbox flex-column squarepaper"
                     style="align-items: center; gap: 1em">
                     <div
@@ -246,7 +272,7 @@
                         <div class="bgstickers">
                             <img src="images/flavor/button.png" style="width: 40px; top: 172px; left: 55px" /><img
                                 src="images/flavor/button.png"
-                                style="width: 40px; top:-12px ; left:-92px;" />
+                                style="width: 40px; top: -12px; left: -92px" />
                         </div>
                         <img src="images/flavor/mii.png" style="padding: 0.25em; width: 8em; object-fit: contain" />
                         <figcaption style="margin-bottom: 15px">
@@ -595,21 +621,6 @@
                             }
                         }
                     </script>
-                </section>
-                <section>
-                    <div class="asidediv">
-                        <iframe
-                            src="https://iframe.chat/embed?chat=19019043"
-                            id="chattable"
-                            frameborder="none"
-                            title="chatbox"></iframe>
-                        <script src="https://iframe.chat/scripts/main.min.js"></script>
-                        <script>
-                            chattable.initialize({
-                                theme: "Comment Section" // use the name of your preferred demo
-                            });
-                        </script>
-                    </div>
                 </section>
             </aside>
         </div>

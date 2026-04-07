@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Courier", "Courier New", monospace;
+    font-family: Courier New;
 }
 
 @font-face {
@@ -333,8 +333,9 @@ aside {
     width: 15vw;
 }
 
-#asideLeft {
+#aside-left {
     grid-area: asideLeft;
+    max-height: 1255px;
 }
 
 footer {
