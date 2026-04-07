@@ -166,6 +166,16 @@ body {
     font-family: times new roman;
 }
 
+#miniblog a img {
+    cursor: pointer;
+    border: none; /* Removes default borders in older browsers */
+    transition: transform 0.2s; /* Smooth effect for hover */
+}
+
+#miniblog a img:hover {
+    transform: rotate(-2deg) scale(1.1);
+}
+
 /* structural flex stuff */
 
 .flex-row {
