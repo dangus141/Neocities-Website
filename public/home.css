@@ -113,11 +113,11 @@ body {
 }
 
 /* structural classes */
-/* i want to fix these eventually so they are more uniform and clean */
+/* i want to fix these eventually so they are more uniform and clean & be aware of padding/margin settings 
+ * (they may conflict with other padding/margin settings used elsewhere) */
 
 .fitbox {
     /* fitted box to content size*/
-    box-shadow: 3px 3px 5px #666;
     box-sizing: border-box;
     position: relative;
     width: fit-content;
@@ -135,11 +135,6 @@ body {
     padding: 0.05em;
 }
 
-.thinbox {
-    /* she's so skinny */
-    width: 90%;
-}
-
 .stickynote {
     background: url(images/websites/back02.gif);
     box-shadow: 3px 3px 5px #666;
@@ -149,9 +144,26 @@ body {
     font-size: 70%;
 }
 
+.thinbox {
+    /* she's so skinny */
+    width: 90%;
+}
+
 .asidediv {
     justify-self: center;
     margin: 0.5em;
+}
+
+#miniblog {
+    height: 210px;
+    max-height: 210px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+#miniblog > * {
+    font-size: 0.75em;
+    font-family: times new roman;
 }
 
 /* structural flex stuff */
@@ -174,6 +186,9 @@ body {
 }
 
 /* flavor classes */
+.boxshadow {
+    box-shadow: 3px 3px 5px #666;
+}
 
 .blue-header {
     /* fitted header for text */
@@ -310,10 +325,7 @@ article {
     align-items: center;
     margin: 0.75em;
     font-size: 0.8em;
-}
-
-article > * {
-    margin: 0.5em;
+    padding: 0.25em;
 }
 
 main {
