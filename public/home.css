@@ -30,7 +30,7 @@ body {
     overflow-y: scroll;
 }
 
-/* id */
+/* link */
 .bluelink {
     a,
     a:visited {
@@ -42,10 +42,6 @@ body {
 
 /* bg stickers classes */
 .stickers {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     position: absolute;
     height: 95%;
     width: 25%;
@@ -53,8 +49,8 @@ body {
 }
 
 .stickers img {
+    position: absolute;
     object-fit: contain;
-    position: relative;
 }
 
 .center {
@@ -104,10 +100,10 @@ body {
 }
 
 /* structural classes */
+/* i want to fix these eventually so they are more uniform and clean */
 
-.box01 {
-    /* fitted box */
-    background: url(images/bgs/newspaperbg.jpg);
+.fitbox {
+    /* fitted box to content size*/
     box-shadow: 3px 3px 5px #666;
     box-sizing: border-box;
     position: relative;
@@ -117,13 +113,18 @@ body {
 }
 
 .fullbox {
-    /* full sized box */
-    background: url(/images/bgs/newspaperbg.jpg);
+    /* full sized box; i have no idea what this does tbh lol*/
     box-shadow: 3px 3px 5px #666;
+    box-sizing: border-box;
     position: relative;
     width: 100%;
-    height: 98%;
+    height: 100%;
     padding: 0.05em;
+}
+
+.thinbox {
+    /* she's so skinny */
+    width: 90%;
 }
 
 .stickynote {
@@ -135,39 +136,12 @@ body {
     font-size: 70%;
 }
 
-.header {
-    /* fitted header for text */
-    box-sizing: border-box;
-    position: relative;
-    width: 100%;
-    padding: 0.05em;
-    box-shadow: 0px 2px 5px #666;
-    background: url(images/bgs/gingham-robin-egg-blue.jpg);
-    background-size: contain;
-}
-
-.header2 {
-    /* general header border w/o text */
-    width: 100%;
-    box-shadow: 0px 2px 5px #666;
-    background: url(images/bgs/gingham-robin-egg-blue.jpg);
-    background-size: contain;
-    height: 2em;
-}
-
 .asidediv {
     justify-self: center;
     margin: 0.5em;
 }
 
-.divider {
-    margin: 0.75em;
-}
-
-.divider img {
-    width: 25em;
-    filter: sepia(0%);
-}
+/* structural flex stuff */
 
 .flex-row {
     /* gives flex in row direction */
@@ -186,11 +160,27 @@ body {
     align-items: center;
 }
 
-.blinkies {
-    width: 7em;
-    object-fit: contain;
-}
 /* flavor classes */
+
+.blue-header {
+    /* fitted header for text */
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 0.05em;
+    box-shadow: 0px 2px 5px #666;
+    background: url(images/bgs/gingham-robin-egg-blue.jpg);
+    background-size: contain;
+}
+
+.blue-header2 {
+    /* general header border w/o text */
+    width: 100%;
+    box-shadow: 0px 2px 5px #666;
+    background: url(images/bgs/gingham-robin-egg-blue.jpg);
+    background-size: contain;
+    height: 2em;
+}
 
 .icon01 {
     /* paper clip */
@@ -212,9 +202,27 @@ body {
     filter: sepia(0%);
 }
 
+.divider {
+    /* divider buttons */
+    margin: 0.75em;
+}
+
+.divider img {
+    /* divider buttons */
+    width: 25em;
+    filter: sepia(0%);
+}
+
 .button {
+    /* for button imgs */
     box-shadow: 2px 2px 3px #666;
     width: 100px;
+    object-fit: contain;
+}
+
+.blinkies {
+    /* for blinkie imgs */
+    width: 7em;
     object-fit: contain;
 }
 
@@ -240,8 +248,38 @@ marquee {
     object-fit: contain;
 }
 
-marquee > img {
+marquee > a > img {
     margin: 0.2em;
+    box-shadow: 2px 2px 2px
+}
+
+/* backgrounds */
+.newspaper {
+    background: url(images/bgs/newspaperbg.jpg);
+}
+
+.globe {
+    background: url(images/bgs/globebg.jpg);
+    background-size: contain;
+}
+
+.squarepaper {
+    background: url(images/websites/squarepaper.jpg);
+}
+
+.linedpaper {
+    background-image: url(images/bgs/linedpaper.jpg);
+    background-size: cover;
+}
+
+.animwater {
+    background-image: url(images/bgs/wavesbg-animated.gif);
+    background-size: contain;
+}
+
+.bluewhitestripes {
+    background-image: url(images/bgs/bluewhitestrips.jpg); 
+    background-size: contain;
 }
 
 /* semantic elements */
@@ -310,8 +348,6 @@ li:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-image: url(images/bgs/linedpaper.jpg);
-    background-size: cover;
 }
 
 #musicplayer > * {
@@ -330,14 +366,14 @@ li:hover {
     gap: 10px;
 }
 
-.buttons {
+.buttons-media {
     display: flex;
     justify-content: center;
     font-size: 10px !important; /* size of controls */
     width: 100%;
 }
 
-.buttons div {
+.buttons-media div {
     width: 33.3%;
 }
 
@@ -416,4 +452,5 @@ input[type="range"]::-moz-range-thumb {
 @media (min-width: 1920px) and (max-width: 2560px) 
  {
      body {zoom: 135%;}
+     /* TEMPORARY FIX UNTIL I GET SOME MORE MEDIA QUERIES SETUP */
 }

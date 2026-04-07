@@ -13,8 +13,8 @@
             <!-- actual content -->
             <div class="content">
                 <main>
-                    <section class="box01" style="padding-top: 0">
-                        <h1 class="header">
+                    <section class="fitbox newspaper" style="padding-top: 0">
+                        <h1 class="blue-header">
                             <b>Welcome to my website!</b>
                         </h1>
                         <article class="flex-row">
@@ -65,14 +65,13 @@
                             </article>
                         </div>
                         <div style="display: flex; align-items: center">
-                            <section class="box01" style="margin-right: 0; margin-left: 40px">
-                                <div class="header2"></div>
+                            <section class="fitbox linedpaper" style="margin-right: 0; margin-left: 40px">
+                                <div class="blue-header2"></div>
                                 <article class="flex-column">
                                     <div class="stickers main">
                                         <img
                                             src="images/flavor/arizonastamp.png"
                                             style="
-                                                position: absolute;
                                                 width: 80px;
                                                 left: -130px;
                                                 top: -90px;
@@ -83,7 +82,6 @@
                                         <img
                                             src="images/flavor/philippinesstamp.png"
                                             style="
-                                                position: absolute;
                                                 width: 100px;
                                                 z-index: 10;
                                                 right: -140px;
@@ -104,12 +102,9 @@
                                     class="button"
                                     src="images/buttons/neocities1.gif" />
                             </div>
-                            <div
-                                id="status_box"
-                                class="box01 hover-tilt"
-                                style="width: 200px; height: 150px; background: white">
+                            <div id="status_box" class="fitbox hover-tilt globe" style="width: 200px; height: 150px">
                                 <div
-                                    class="header"
+                                    class="blue-header"
                                     style="
                                         background-image: linear-gradient(#65c3e2, #325ca8);
                                         border-bottom: double 0.25px black;
@@ -141,24 +136,23 @@
                             </div>
 
                             <div>
-                                <img style="background-color: white" src="images/stamps/dwebble.png" />
-                                <img src="images/stamps/clubpenguin.gif" />
+                                <img class="button animwater" src="images/stamps/dwebble.png" />
+                                <img class="button" src="images/stamps/clubpenguin.gif" />
                                 <br />
-                                <img src="images/stamps/pompomfan.webp" />
+                                <img class="button" src="images/stamps/pompomfan.webp" />
                             </div>
                         </div>
                         <article
-                            id="update_box"
-                            class="stickynote"
+                            class="fullbox squarepaper"
                             style="
                                 float: right;
+                                padding: 0.5em;
                                 width: 300px;
                                 height: 350px;
                                 overflow-y: scroll;
                                 font-size: 18px;
-                                background: url(images/bgs/globebg.jpg);
-                                background-size: contain;
                             ">
+                            <!-- update box -->
                             <div style="display: flex; flex-direction: row; justify-content: center">
                                 <img
                                     src="images/icons/star90.gif"
@@ -198,7 +192,7 @@
                     </section>
                     <div class="divider"><img src="images/dividers/buttons.gif" /></div>
                 </main>
-                <nav class="box01" style="width: 100%">
+                <nav class="fitbox newspaper" style="width: 100%">
                     <div>
                         <ul>
                             <li><a>Home</a></li>
@@ -222,13 +216,8 @@
                 </nav>
                 <aside
                     id="asideLeft"
-                    class="fullbox flex-column"
-                    style="
-                        width: 90%;
-                        background: url(images/websites/squarepaper.jpg);
-                        align-items: center;
-                        gap: 1em;
-                    ">
+                    class="fullbox thinbox flex-column squarepaper"
+                    style="align-items: center; gap: 1em">
                     <div
                         class="icon02"
                         style="
@@ -250,29 +239,25 @@
                         <img src="images/blinkies/likefish.gif" class="blinkies" alt="" />
                         <img src="images/blinkies/kutchipatchi.gif" class="blinkies" alt="" />
                     </section>
-                    <figure
-                        class="asidediv flex-column button-border"
-                        style="background-image: url(images/bgs/bluewhitestrips.jpg); background-size: contain">
-                        <img
-                            src="images/flavor/mii.png"
-                            style="padding: 0.25em; width: 8em; object-fit: contain" />
+                    <figure class="asidediv flex-column button-border newspaper" style="background-size: contain; box-shadow: 1px 1px 1px #666;">
+                        <img src="images/flavor/mii.png" style="padding: 0.25em; width: 8em; object-fit: contain" />
                         <figcaption style="margin-bottom: 15px">
                             <div>
                                 <b>Mii! <img src="images/emoticons/lovesmile.gif" /></b>
                             </div>
                         </figcaption>
                     </figure>
-                    <section class="flex-column;">
+                    <section class="flex-column asidediv">
                         <div>
-                            <div><img src="images/buttons/gamer.png" /></div>
-                            <div><img src="images/buttons/minesweeper.png" /></div>
+                            <div><img class="button" src="images/buttons/gamer.png" /></div>
+                            <div><img class="button" src="images/buttons/minesweeper.png" /></div>
                         </div>
                         <div>
                             <div><img src="images/buttons/Gay.png" /></div>
                             <div><img src="images/buttons/FF_Fan.png" /></div>
                         </div>
                     </section>
-                    <section>
+                    <section class="asidediv">
                         <div>
                             <marquee>
                                 <a href="https://shishka.neocities.org/shishka/icons" style="text-decoration: none">
@@ -299,7 +284,7 @@
             </div>
             <aside class="flex-column" style="gap: 0.5em; margin-top: 15em">
                 <!-- might need to change this margin-top eventually lol but it looks fine rn-->
-                <div class="stickynote hover-tilt" style="width: 188px; max-width: 188px">
+                <div class="stickynote hover-tilt" style="width: 90%; max-width: 90%">
                     <div
                         class="icon02"
                         style="
@@ -373,8 +358,8 @@
                         <a class="hover-shade" style="border: dashed; padding: 1px; border-radius: 0.5em">My History</a>
                     </div>
                 </div>
-                <section id="musicplayer" class="fullbox">
-                    <div class="header" style="font-family: Altima; font-size: 2em; text-align: center">
+                <section id="musicplayer" class="fullbox linedpaper">
+                    <div class="blue-header" style="font-family: Altima; font-size: 2em; text-align: center">
                         Music Player
                     </div>
                     <div class="now-playing" style="font-family: Reactor7">Playing 1 of 2</div>
@@ -393,7 +378,7 @@
                             <div class="total-duration" style="font-family: Reactor7">0:00</div>
                         </div>
 
-                        <div class="buttons">
+                        <div class="buttons-media">
                             <div class="prev-track" onclick="prevTrack()">&#171;</div>
 
                             <div class="playpause-track" onclick="playpauseTrack()">&#9654;</div>
@@ -600,20 +585,20 @@
                     </script>
                 </section>
                 <section>
-                        <div>
-                            <iframe
-                                src="https://iframe.chat/embed?chat=19019043"
-                                id="chattable"
-                                frameborder="none"
-                                title="chatbox"></iframe>
-                            <script src="https://iframe.chat/scripts/main.min.js"></script>
-                            <script>
-                                chattable.initialize({
-                                    theme: "Comment Section" // use the name of your preferred demo
-                                });
-                            </script>
-                        </div>
-                    </section>
+                    <div>
+                        <iframe
+                            src="https://iframe.chat/embed?chat=19019043"
+                            id="chattable"
+                            frameborder="none"
+                            title="chatbox"></iframe>
+                        <script src="https://iframe.chat/scripts/main.min.js"></script>
+                        <script>
+                            chattable.initialize({
+                                theme: "Comment Section" // use the name of your preferred demo
+                            });
+                        </script>
+                    </div>
+                </section>
             </aside>
         </div>
     </body>
