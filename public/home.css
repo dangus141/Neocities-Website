@@ -25,7 +25,7 @@ body {
     position: relative;
 }
 
-body::before {
+body::before { /*only affects background image */
     content: ""; /* this content property makes a "fake" pseudoelement; essentially a fake box that doesn't exist in the html */
     position: fixed;
     top: 0;
@@ -33,12 +33,15 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url(images/bgs/boat.jpg);
-    /* fun idea here but need to fix some structural issues before i can implement
-    background-repeat: repeat-y;
-    background-position: right;
-    */
-    filter: sepia(35%);
+
+    background-image: url(images/bgs/boat.jpg), url(images/bgs/pixelclouds.jpg);
+    background-color: #78b9f4;
+    background-blend-mode: normal, luminosity;
+    background-repeat: repeat-y, repeat;
+    background-position: right, left;
+    background-size: none, cover;
+    
+    filter: sepia(35%) grayscale(25%);
 }
 
 /* main content */
@@ -104,7 +107,9 @@ body {
 
 .content {
     /* does not include right aside!!! */
-    width: 1100px;
+    /* width here determines if the content scales or not!!! px does NOT scale */
+    width: 50em;
+    min-width: 50em;
     text-align: center;
 
     /* grid */
@@ -303,6 +308,10 @@ marquee > a > img {
 .bluewhitestripes {
     background-image: url(images/bgs/bluewhitestrips.jpg);
     background-size: contain;
+}
+
+.corkboard {
+    background-image: url(images/bgs/corkboard.jpg);
 }
 
 .ginghamgold {
