@@ -25,7 +25,8 @@ body {
     position: relative;
 }
 
-body::before { /*only affects background image */
+body::before {
+    /*only affects background image */
     content: ""; /* this content property makes a "fake" pseudoelement; essentially a fake box that doesn't exist in the html */
     position: fixed;
     top: 0;
@@ -39,7 +40,7 @@ body::before { /*only affects background image */
     background-blend-mode: normal, luminosity;
     background-repeat: repeat-y, repeat;
     background-position: right, left;
-    background-size: none, cover; 
+    background-size: none, cover;
     filter: sepia(55%) grayscale(25%);
 }
 
@@ -502,7 +503,6 @@ input[type="range"]::-moz-range-thumb {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
     body {
-        zoom: 135%;
+        zoom: 130%;
     }
-    /* TEMPORARY FIX UNTIL I GET SOME MORE MEDIA QUERIES SETUP */
 }
