@@ -39,9 +39,8 @@ body::before { /*only affects background image */
     background-blend-mode: normal, luminosity;
     background-repeat: repeat-y, repeat;
     background-position: right, left;
-    background-size: none, cover;
-    
-    filter: sepia(35%) grayscale(25%);
+    background-size: none, cover; 
+    filter: sepia(55%) grayscale(25%);
 }
 
 /* main content */
