@@ -23,6 +23,8 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    align-items: center;
+    overflow-y: scroll;
 }
 
 body::before {
@@ -44,13 +46,6 @@ body::before {
     filter: sepia(55%) grayscale(25%);
 }
 
-/* main content */
-
-body {
-    align-items: center;
-    overflow-y: scroll;
-}
-
 /* link */
 .bluelink {
     a,
@@ -60,42 +55,6 @@ body {
 }
 
 /* classes */
-
-/* bg stickers classes */
-.bgstickers {
-    position: absolute;
-}
-
-.bgstickers img {
-    position: absolute;
-    object-fit: contain;
-    filter: drop-shadow(2px 2px 2px);
-    z-index: 10;
-}
-
-.center {
-    left: 25%;
-}
-
-.left {
-    left: -5%;
-}
-
-.right {
-    right: 25%;
-}
-
-.righter {
-    right: 10%;
-}
-
-.rightest {
-    right: 5%;
-}
-
-.bottom {
-    bottom: -90%;
-}
 
 .container /* ALL content container*/ {
     display: flex;
@@ -111,11 +70,26 @@ body {
     width: 50em;
     min-width: 50em;
     text-align: center;
+}
 
-    /* grid */
+.content > * {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.content-1 {
+    /* 1st content box */
     display: grid;
     grid-template: "asideLeft nav" 2em "asideLeft main" auto "asideLeft main" auto "footer footer" min-content;
     grid-template-columns: 20% 70%;
+    row-gap: 0.25em;
+}
+
+.content-2 {
+    /* 2nd content box */
+    display: grid;
+    grid-template: "section section" auto "section section" auto "section section" auto "footer footer";
+    grid-template-columns: 50% 50%;
     row-gap: 0.25em;
 }
 
@@ -213,7 +187,7 @@ body {
     width: 100%;
     padding: 0.05em;
     box-shadow: 0px 2px 5px #666;
-    background: url(images/bgs/gingham-robin-egg-blue.jpg);
+    background: url(images/bgs/gingham-baby-blue.jpg);
     background-size: contain;
 }
 
@@ -361,7 +335,7 @@ nav {
     flex-wrap: wrap;
 }
 
-#aside-left {
+.aside-left {
     grid-area: asideLeft;
     max-height: 1255px;
 }
@@ -504,4 +478,41 @@ input[type="range"]::-moz-range-thumb {
     body {
         zoom: 130%;
     }
+}
+
+/*wip*/
+/* bg stickers classes */
+.bgstickers {
+    position: absolute;
+}
+
+.bgstickers img {
+    position: absolute;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 2px);
+    z-index: 10;
+}
+
+.center {
+    left: 25%;
+}
+
+.left {
+    left: -5%;
+}
+
+.right {
+    right: 25%;
+}
+
+.righter {
+    right: 10%;
+}
+
+.rightest {
+    right: 5%;
+}
+
+.bottom {
+    bottom: -90%;
 }
