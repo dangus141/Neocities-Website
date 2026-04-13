@@ -526,6 +526,12 @@ input[type="range"]::-moz-range-thumb {
     }
 }
 
+@media (max-width: 768px) {
+    body::before {
+        background-image: url(images/bgs/pixelclouds.jpg);
+    }
+}
+
 /*wip but it works???*/
 /* bg stickers classes */
 .bgstickers {
