@@ -46,14 +46,6 @@ body::before {
     filter: sepia(55%) grayscale(25%);
 }
 
-/* link */
-.bluelink {
-    a,
-    a:visited {
-        color: blue;
-    }
-}
-
 /* classes */
 
 .container /* ALL content container*/ {
@@ -365,6 +357,60 @@ li:hover {
     background-color: rgba(20, 20, 20, 0.15);
 }
 
+/* links */
+.bluelink {
+    a,
+    a:visited {
+        color: blue;
+    }
+}
+
+.nolinkdec {
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: none;
+    }
+}
+
+.blacklink {
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: black;
+    }
+}
+
+.linkblock {
+    a {
+        display: block;
+    }
+}
+
+.dropdown-content {
+    display: none; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: start;
+    font-size: 0.75em;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(20, 20, 20, 0.15);
+}
+
 /* music player */
 #musicplayer {
     font-size: 18px;
@@ -480,7 +526,7 @@ input[type="range"]::-moz-range-thumb {
     }
 }
 
-/*wip*/
+/*wip but it works???*/
 /* bg stickers classes */
 .bgstickers {
     position: absolute;
