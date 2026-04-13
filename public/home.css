@@ -528,6 +528,7 @@ input[type="range"]::-moz-range-thumb {
 
 @media (max-width: 768px) {
     body::before {
+        content: initial;
         background-image: url(images/bgs/pixelclouds.jpg);
     }
 }
