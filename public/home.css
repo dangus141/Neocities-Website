@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Courier New;
+    font-family: Faune;
 }
 
 @font-face {
@@ -16,6 +16,23 @@
 @font-face {
     font-family: Century;
     src: url("fonts/Century/century_normal.ttf");
+}
+
+@font-face {
+    font-family: Director;
+    src: url("fonts/Director/Director-Regular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Faune;
+    src: url("fonts/Faune/Faune-Text_Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: Faune-Italic;
+    src: url("fonts/Faune-Italic/Faune-Text_Italic.woff") format('woff');
 }
 
 body {
@@ -135,7 +152,6 @@ body::before {
 
 #miniblog > * {
     font-size: 0.9em;
-    font-family: times new roman;
 }
 
 #miniblog a img {
@@ -181,6 +197,11 @@ body::before {
     box-shadow: 0px 2px 5px #666;
     background: url(images/bgs/gingham-baby-blue.jpg);
     background-size: contain;
+}
+
+.blue-header div {
+    font-family: Faune-Italic;
+    font-size: 1.25em;
 }
 
 .blue-header2 {
@@ -399,7 +420,7 @@ li:hover {
     text-decoration: none;
     display: block;
     text-align: start;
-    font-size: 0.75em;
+    font-size: 0.8em;
 }
 
 .dropdown:hover .dropdown-content {
