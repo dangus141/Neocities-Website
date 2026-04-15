@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Faune;
+    font-family: Glacier-Regular;
 }
 
 @font-face {
@@ -20,19 +20,38 @@
 
 @font-face {
     font-family: Director;
-    src: url("fonts/Director/Director-Regular.woff2") format('woff2');
+    src: url("fonts/Director/Director-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: Faune;
-    src: url("fonts/Faune/Faune-Text_Regular.woff") format('woff');
+    src: url("fonts/Faune/Faune-Text_Regular.woff") format("woff");
 }
 
 @font-face {
     font-family: Faune-Italic;
-    src: url("fonts/Faune-Italic/Faune-Text_Italic.woff") format('woff');
+    src: url("fonts/Faune-Italic/Faune-Text_Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: Glacier-Regular;
+    src: url("fonts/Glacier-Regular/Glacier-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: Glacier-Black;
+    src: url("fonts/Glacier-Black/Glacier-Black.woff") format("woff");
+}
+
+@font-face {
+    font-family: Glacier-Bold;
+    src: url("fonts/Glacier-Bold/Glacier-Bold.woff") format("woff");
+}
+
+.glacier-bold {
+    font-family: Glacier-Bold;
 }
 
 body {
@@ -254,6 +273,11 @@ body::before {
 .blinkies {
     /* for blinkie imgs */
     width: 7em;
+    object-fit: contain;
+}
+
+.stamps img {
+    width: 5em;
     object-fit: contain;
 }
 
