@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: Glacier-Regular;
 }
 
 @font-face {
@@ -50,9 +49,43 @@
     src: url("fonts/Glacier-Bold/Glacier-Bold.woff") format("woff");
 }
 
+.director {
+    font-family: Director;
+}
+
+.faune {
+    font-family: Faune;
+}
+
+.glacier {
+    font-family: Glacier-Regular;
+}
+
+.glacier p {
+    font-family: Glacier-Regular;
+}
+
+b {
+    font-family: Glacier-Bold;
+}
+
 .glacier-bold {
     font-family: Glacier-Bold;
 }
+
+.glacier-bold u {
+    font-family: Glacier-Bold;
+}
+
+.glacier-bold i {
+    font-family: Glacier-Bold;
+}
+
+.times p {
+    font-family: Times New Roman;
+}
+
+/* body css */
 
 body {
     font-size: 20px;
@@ -216,11 +249,8 @@ body::before {
     box-shadow: 0px 2px 5px #666;
     background: url(images/bgs/gingham-baby-blue.jpg);
     background-size: contain;
-}
-
-.blue-header div {
-    font-family: Faune-Italic;
-    font-size: 1.25em;
+    font-family: Director;
+    font-size: 23px;
 }
 
 .blue-header2 {

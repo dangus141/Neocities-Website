@@ -12,11 +12,15 @@
     font-size: 0.75em;
 }
 
+.aboutme-box div {
+    width: 100%;
+}
+
 .movieimage {
     cursor: pointer;
     border: none; /* Removes default borders in older browsers */
     transition: transform 0.2s; /* Smooth effect for hover */
-    width: 100px;
+    width: 90px;
 }
 
 .movieimage:hover {
@@ -25,4 +29,13 @@
 }
 .pmargin p {
     margin: 0.25em;
+}
+
+h2 {
+    font-family: Director;
+    margin-bottom: 0;
+}
+
+hr {
+    height: 1px; background-color: black; border: none
 }
