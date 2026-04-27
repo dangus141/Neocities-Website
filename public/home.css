@@ -440,6 +440,10 @@ li:hover {
     }
 }
 
+.bluelink button a,a:visited {
+    color: blue;
+}
+
 .nolinkdec {
     a:link,
     a:visited,

@@ -3,10 +3,11 @@
     <head>
         <link rel="stylesheet" href="home.css" />
         <link rel="stylesheet" href="aboutme.css" />
+        <link rel="stylesheet" href="dist/css/glightbox.css" />
+        <script src="dist/js/glightbox.min.js"></script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>dan's hideaway | about me</title>
-        <script src="https://iframe.chat/scripts/main.min.js"></script>
     </head>
     <body>
         <!-- background stickers -->
@@ -68,7 +69,7 @@
                 <div class="aboutme-content">
                     <section
                         class="fullbox flex-column aboutme-box glacier"
-                        style="overflow-y: auto; padding: 1em; max-height: 550px; width: 460px;">
+                        style="overflow-y: auto; padding: 1em; max-height: 550px; width: 460px">
                         <div style="width: 100%">
                             <h2>Things About Me</h2>
                             <hr />
@@ -82,16 +83,16 @@
                                         src="images/buttons/Gay.png"
                                         style="width: 6em; object-fit: contain; margin: 0.1em" />
                                     <img
+                                        src="images/buttons/filipino.png"
+                                        style="width: 6em; object-fit: contain; margin: 0.1em" />
+                                    <img
                                         src="images/buttons/infj.png"
                                         style="width: 6em; object-fit: contain; margin: 0.1em" />
                                     <img
                                         src="images/buttons/leo.png"
                                         style="width: 6em; object-fit: contain; margin: 0.1em" />
-                                    <img
-                                        src="images/buttons/filipino.png"
-                                        style="width: 6em; object-fit: contain; margin: 0.1em" />
                                 </div>
-                                <div class="flex-row" style="display: flex; align-items: center">
+                                <div class="flex-row" style="align-items: center">
                                     <p><b>Final Fantasy Job</b>:</p>
                                     <img
                                         src="images/buttons/bluemage.png"
@@ -101,13 +102,39 @@
                                         src="images/buttons/wizarddnd.png"
                                         style="width: 6em; object-fit: contain; margin: 0.1em" />
                                 </div>
-
+                                <div class="flex-row" style="align-items: center">
+                                    <p><b>Favorite Color</b>: Aqua Blue</p>
+                                    <p><b>Handedness</b>: Left-handed</p>
+                                </div>
+                                <div class="flex-row" style="align-items: center">
+                                    <p><b>Favorite Planets</b>: Saturn &amp; Earth</p>
+                                    <p><b>Favorite Seasons</b>: Summer &amp; Fall</p>
+                                </div>
                                 <p>
-                                    Things I want to learn right now: knitting colorwork, knitting lace, <br />
-                                    playing the guitar &amp; drums, ham radio, astronomy/using telescopes, <br />
-                                    get better at Tagalog
+                                    <b>Things I want to learn right now</b>: knitting colorwork, knitting lace, <br />
+                                    playing the guitar &amp; drums, ham radio (in turn, a lot of electronics!),
+                                    astronomy/using telescopes, getting better at Tagalog
                                 </p>
                             </div>
+                        </div>
+                        <div>
+                            <h2>My Favorite Pokemon</h2>
+                            <hr />
+                            <div class="flex-row pokemon">
+                                <img src="images/aboutme/empoleon.png" />
+                                <img src="images/aboutme/wobbufett.png" />
+                                <img src="images/aboutme/appletun.png" />
+                                <img src="images/aboutme/duosion.png" />
+                                <img src="images/aboutme/psyduck.png" />
+                            </div>
+                            <button
+                                class="glightbox bluelink"
+                                data-glightbox="gallery1"
+                                data-type="image"
+                                data-href="images/aboutme/pokemon-detailed.png"
+                                data-description="Ultimate Favorite Pokemon Picker made by <a href='https://cajunavenger.github.io' target='_blank'/>CajunAvenger</a>!">
+                                More of my Favorites!
+                            </button>
                         </div>
                         <div>
                             <h2>My Letterboxd Top 4</h2>
@@ -120,10 +147,51 @@
                                     class="boxshadow movieimage" />
                                 <img src="images/aboutme/movie4.jpg" class="boxshadow movieimage" />
                             </div>
+                            <p style="text-align: left">
+                                For one reason or another, these movies really resonated with me.
+                            </p>
+                            <p style="text-align: left">
+                                Common themes I enjoy are surrealist/dreamlike aesthetics &amp; imagery (love you David
+                                Lynch), movies that focus on queer stories and characters, and movies that can make me
+                                cry lol.
+                            </p>
+
+                            <p style="text-align: left; margin-bottom: 0">
+                                Here's the rest of my
+                                <a href="https://boxd.it/dtiD7" target="_blank" rel="noopener noreferrer">Letterboxd</a>
+                                if you want to see my really really bad reviews (it's mostly just quotes I liked from
+                                the movie or if there was a hot actor I liked).
+                            </p>
                         </div>
                         <div>
-                            <h2>My Favorite Pokemon</h2>
+                            <h2>My Favorite Games</h2>
                             <hr />
+                            <div class="flex-row">
+                                <img src="images/aboutme/discoelysium.png" class="boxshadow movieimage" /><img
+                                    src="images/aboutme/ffx.jpg"
+                                    class="boxshadow movieimage" /><img
+                                    src="images/aboutme/darksouls.jpg"
+                                    class="boxshadow movieimage" />
+                                <img src="images/aboutme/mhgu.jpg" class="boxshadow movieimage" />
+                            </div>
+                            <div class="flex-row" style="justify-content: center">
+                                <img src="images/aboutme/residentevil.jpg" class="boxshadow movieimage" /><img
+                                    src="images/aboutme/sh2.jpg"
+                                    class="boxshadow movieimage" />
+                                <img src="images/aboutme/ggstrive.jpg" class="boxshadow movieimage" />
+                            </div>
+                            <p style="text-align: left">
+                                I've got a ton more games that I like but I think these are my <br />all-time favorite
+                                games. These are the ones that I keep coming back <br />to or have made a significant
+                                impact on my worldview &amp; values.
+                            </p>
+                            <p style="text-align: left">
+                                My favorite genre of video game are definitely RPGs (of all <br />kinds!) but I have
+                                also come to enjoy survival horror a lot as well. I'm not very good at them but I love
+                                fighting games too!
+                            </p>
+
+                            More on video games <a href="">here</a>
                         </div>
                         <div class="bluelink">
                             <h2>100 Questions For Webmasters</h2>
@@ -131,7 +199,8 @@
                             Made by
                             <a href="https://mouseling.net/100webmaster" target="_blank" rel="noopener noreferrer"
                                 >Mouseling</a
-                            >!
+                            >
+                            <p>I will fill this out eventually</p>
                             <details>
                                 <summary>Click To Expand</summary>
                                 <dl>
@@ -555,9 +624,10 @@
                                         Hello! My name is Dan or dangus in online spaces. Welcome to my website!
                                     </p>
                                 </div>
-                                <div class="stamps" style="margin-top: 1em">
-                                    <img src="images/stamps/oldweb.png" class="boxshadow" /><img
+                                <div class="stamps flex-column" style="margin-top: 1em">
+                                    <img
                                         src="images/stamps/water_ripples.gif"
+                                        style="margin-bottom: 0.2em"
                                         class="boxshadow" /><img src="images/stamps/stars.png" class="boxshadow" />
                                 </div>
                             </div>
@@ -581,37 +651,33 @@
                                 <img src="images/stamps/smiling%20friends.webp" class="stamps boxshadow" />
                             </div>
                         </div>
-                        <div class="aboutme-box fullbox faune" style="font-size: 0.65em;">
-                            <p>
-                                I am learning to knit, crochet, make websites, and would like to play music again. I
-                                want to get stronger and go to the gym more often, although it's been a bit hard lately
-                                lol... I love to learn and I love when people talk my ear off about their passions! I
-                                find myself wanting to learn everything but not having enough time to really get deep
-                                into a subject!
-                            </p>
-                        </div>
-                        <div class="aboutme-box fullbox faune" style="font-size: 0.65em; margin-top: 1em">
+                        <div class="aboutme-box fullbox faune" style="font-size: 0.65em">
                             <p>
                                 I made this website as a personal project. I want my own space on the internet that I
                                 can call my own without any of the hangups of using/relying on social media. I want to
                                 feel free to express my own views and post my own content as I want it to be. I also
-                                enjoy the challenge of learning HTML and CSS. I hope to improve my webdev skills as I
+                                enjoy the challenge of learning HTML and CSS; I hope to improve my webdev skills as I
                                 continue working on this website.
+                            </p>
+                        </div>
+                        <div class="aboutme-box fullbox faune" style="font-size: 0.75em; margin-top: 1em">
+                            <p>
+                                &nbsp;I love to learn and I love when people talk my ear off about their passions!
+                                <i>Please share what interests you with me!</i> I find myself wanting to learn
+                                everything but not having enough time to really get deep into a subject!&nbsp;
                             </p>
                         </div>
                     </section>
                     <footer style="text-align: center">
                         <div class="divider"><img src="images/dividers/buttons.gif" /></div>
                         <!-- FC2 Counter  Starts here -->
-                        <script
-                            language="javascript"
-                            type="text/javascript"
-                            src="//counter1.fc2.com/counter.php?id=40502904&main=1"></script>
+                        <script type="text/javascript" src="//counter1.fc2.com/counter.php?id=40502904&main=1"></script>
                         <noscript><img src="//counter1.fc2.com/counter_img.php?id=40502904&main=1" /></noscript>
                         <!-- FC2 Counter  Ends here -->
                     </footer>
                 </div>
             </div>
         </div>
+        <script src="js-files/glightbox-personal.js"></script>
     </body>
 </html>
