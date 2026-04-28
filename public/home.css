@@ -57,6 +57,10 @@
     font-family: Faune;
 }
 
+.faune p {
+    font-family: Faune;
+}
+
 .glacier {
     font-family: Glacier-Regular;
 }
@@ -440,7 +444,8 @@ li:hover {
     }
 }
 
-.bluelink button a,a:visited {
+.bluelink button a,
+a:visited {
     color: blue;
 }
 
@@ -613,6 +618,13 @@ input[type="range"]::-moz-range-thumb {
         background-color: #78b9f4;
         background-blend-mode: normal, luminosity;
         filter: sepia(55%) grayscale(25%);
+    }
+
+    /* Force inputs to 16px to prevent iOS auto-zoom */
+    input,
+    textarea,
+    select {
+        font-size: 16px !important;
     }
 }
 
