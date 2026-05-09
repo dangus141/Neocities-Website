@@ -1,0 +1,12 @@
+---
+title: Blog Landing Test
+data: collections.post
+layout: blog-landing.njk
+reverse: true
+---
+
+<ul>
+    {% for post in collections.post | reverse %}
+    <li><a href="{{post.url | url}}">{{ post.data.title }}</a> - {{ post.date }}</li>
+    {% endfor %}
+</ul>

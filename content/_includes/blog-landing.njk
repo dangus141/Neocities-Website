@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/public/home.css" />
+  <link rel="stylesheet" href="/public/template.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dan's hideaway | {{title}} </title>
+</head>
+
+<body>
+  <!-- background stickers -->
+  <div class="container">
+    <!-- actual content -->
+    <div class="content">
+      <nav class="fitbox newspaper boxshadow glacier" style="width: 100%">
+        {% include 'navbar.njk' %}
+      </nav>
+      <div class="content-container">
+        <main>
+          <section class="fullbox flex-column content-box" style="overflow-y: auto; padding: 1em;">
+            <h2>My Blogposts</h2>
+          {{ content | safe }}  
+          </section>
+        </main>
+        <footer style="text-align: center">
+          <div class="divider"><img src="/public/images/dividers/buttons.gif" /></div>
+          <!-- FC2 Counter  Starts here -->
+          <script type="text/javascript" src="//counter1.fc2.com/counter.php?id=40502904&main=1"></script>
+          <noscript><img src="//counter1.fc2.com/counter_img.php?id=40502904&main=1" /></noscript>
+          <!-- FC2 Counter  Ends here -->
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
