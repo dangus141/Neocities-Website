@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
-  
+
   // --- 1. FILTERS ---
-  
+
   // Your stripSlash filter
   eleventyConfig.addFilter("stripSlash", (url) => {
     if (typeof url !== "string") return url;
@@ -9,17 +9,16 @@ module.exports = function (eleventyConfig) {
   });
 
   // Your readableDate filter (removes GMT)
+
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return dateObj.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      timeZone: 'UTC' // Added to prevent "off-by-one" day errors
-    });
+    if (!dateObj) return "Date not available"; // Return a fallback string
+    return new Date(dateObj).toLocaleDateString(); // Ensure it's a Date object
   });
 
+
+
   // --- 2. SETTINGS & PASSTHROUGH ---
-  
+
   eleventyConfig.setQuietMode(true);
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
   eleventyConfig.setUseGitIgnore(false);
@@ -27,7 +26,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["html", "njk", "txt", "js", "css", "xml", "json"]);
 
   // --- 3. RETURN CONFIG ---
-  
+
   return {
     htmlTemplateEngine: "njk",
     dir: {

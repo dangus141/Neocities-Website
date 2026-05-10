@@ -22,9 +22,10 @@
           <section class="fullbox content-box" style="overflow-y: auto; padding: 1em;">
             <h2>My Blogposts</h2>
             <hr />
-            <ul class="flex-column">
+            <ul class="flex-column glacier" style="font-size: 1.2em;">
+              <img>
               {% for post in collections.post | reverse %}
-              <li><a href="{{post.url | stripSlash}}">{{ post.data.title }}</a> - {{ post.date | readableDate }}</li>
+              <li><a href="{{post.url | stripSlash}}">{{ post.data.title }}</a>  - posted on {{ post.date | readableDate }}</li>
               {% endfor %}
             </ul>
           </section>

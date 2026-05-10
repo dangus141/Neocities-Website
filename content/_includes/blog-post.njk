@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="{{nesting}}home.css" />
   <link rel="stylesheet" href="{{nesting}}template.css" />
+  <link rel="stylesheet" href="{{nesting}}/css-files/blog.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>dan's hideaway | {{title}} </title>
@@ -19,9 +20,13 @@
       </nav>
       <div class="content-container">
         <main>
-          <section class="fullbox flex-column content-box" style="overflow-y: auto; padding: 1em;">
-            <h2>{{title}}</h2> 
-            <p>{{ content | safe }}</p>
+          <section class="fullbox content-box" style="overflow-y: auto; padding: 1em;">
+            <h1>{{title}}</h1>
+            <h2>
+              {{ date | readableDate }}
+            </h2>
+            <hr />
+            <article class="flex-column" style="font-size: larger; text-align: left;">{{ content | safe }}</article>
           </section>
         </main>
         <footer style="text-align: center">

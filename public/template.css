@@ -25,6 +25,11 @@ main {
     margin: 0.25em;
 }
 
+h1 {
+    font-family: Director;
+    margin-bottom: 0;
+}
+
 h2 {
     font-family: Director;
     margin-bottom: 0;
