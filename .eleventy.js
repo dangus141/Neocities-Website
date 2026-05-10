@@ -1,22 +1,34 @@
 module.exports = function (eleventyConfig) {
-  // This makes the eleventy command quieter (with less detail)
+  
+  // --- 1. FILTERS ---
+  
+  // Your stripSlash filter
+  eleventyConfig.addFilter("stripSlash", (url) => {
+    if (typeof url !== "string") return url;
+    return url.startsWith("/") ? url.substring(1) : url;
+  });
+
+  // Your readableDate filter (removes GMT)
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return dateObj.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      timeZone: 'UTC' // Added to prevent "off-by-one" day errors
+    });
+  });
+
+  // --- 2. SETTINGS & PASSTHROUGH ---
+  
   eleventyConfig.setQuietMode(true);
-
-  // This will stop the default behaviour of foo.html being turned into foo/index.html
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
-
-  // This will make Eleventy not use your .gitignore file to ignore files
   eleventyConfig.setUseGitIgnore(false);
-
-  // This will copy this folder to the output without modifying it at all
   eleventyConfig.addPassthroughCopy({ "src/public": "/" });
-
-  // This defines which files will be copied
   eleventyConfig.setTemplateFormats(["html", "njk", "txt", "js", "css", "xml", "json"]);
 
-  // This defines the input and output directories
+  // --- 3. RETURN CONFIG ---
+  
   return {
-    // This makes sure HTML files use Nunjucks
     htmlTemplateEngine: "njk",
     dir: {
       input: "content",

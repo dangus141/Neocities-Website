@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="/public/home.css" />
-  <link rel="stylesheet" href="/public/template.css" />
+  <link rel="stylesheet" href="{{nesting}}home.css" />
+  <link rel="stylesheet" href="{{nesting}}template.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>dan's hideaway | {{title}} </title>
@@ -19,13 +19,18 @@
       </nav>
       <div class="content-container">
         <main>
-          <section class="fullbox flex-column content-box" style="overflow-y: auto; padding: 1em;">
+          <section class="fullbox content-box" style="overflow-y: auto; padding: 1em;">
             <h2>My Blogposts</h2>
-          {{ content | safe }}  
+            <hr />
+            <ul class="flex-column">
+              {% for post in collections.post | reverse %}
+              <li><a href="{{post.url | stripSlash}}">{{ post.data.title }}</a> - {{ post.date | readableDate }}</li>
+              {% endfor %}
+            </ul>
           </section>
         </main>
         <footer style="text-align: center">
-          <div class="divider"><img src="/public/images/dividers/buttons.gif" /></div>
+          <div class="divider"><img src="{{nesting}}images/dividers/buttons.gif" /></div>
           <!-- FC2 Counter  Starts here -->
           <script type="text/javascript" src="//counter1.fc2.com/counter.php?id=40502904&main=1"></script>
           <noscript><img src="//counter1.fc2.com/counter_img.php?id=40502904&main=1" /></noscript>
