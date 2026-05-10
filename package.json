@@ -6,5 +6,8 @@
   },
   "scripts": {
     "build": "npx @11ty/eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^6.0.4"
   }
 }
